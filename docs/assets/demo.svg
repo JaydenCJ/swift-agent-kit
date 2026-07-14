@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 780 250" font-family="ui-monospace, SFMono-Regular, Menlo, Consolas, monospace" font-size="13">
+  <rect x="0" y="0" width="780" height="250" rx="10" fill="#161b26"/>
+  <rect x="0" y="0" width="780" height="34" rx="10" fill="#232a3b"/>
+  <rect x="0" y="24" width="780" height="10" fill="#232a3b"/>
+  <circle cx="22" cy="17" r="6" fill="#ff5f57"/>
+  <circle cx="42" cy="17" r="6" fill="#febc2e"/>
+  <circle cx="62" cy="17" r="6" fill="#28c840"/>
+  <text x="390" y="21" text-anchor="middle" fill="#8b93a7">swiftagentkit-demo</text>
+  <text x="20" y="66" fill="#7ee787">$</text>
+  <text x="36" y="66" fill="#e6edf3">swift run swiftagentkit-demo --offline "What's on my calendar tomorrow?"</text>
+  <text x="20" y="102" fill="#79c0ff">[step 1] get_calendar_events({"day":"tomorrow"}) -&gt; 10:30 Dentist, 19:00 Dinner with Yuki</text>
+  <text x="20" y="138" fill="#e6edf3">Here's your schedule: 10:30 Dentist, 19:00 Dinner with Yuki</text>
+  <text x="20" y="174" fill="#7ee787">$</text>
+  <rect x="36" y="163" width="8" height="14" fill="#8b93a7"/>
+  <line x1="20" y1="196" x2="760" y2="196" stroke="#2d3548" stroke-width="1"/>
+  <text x="20" y="222" fill="#8b93a7" font-size="12">Offline demo: a deterministic scripted provider plays the model — no server, no network, no weights.</text>
+  <text x="20" y="240" fill="#8b93a7" font-size="12">Swap in Ollama / llama.cpp / LM Studio / vLLM / OpenAI / Anthropic for live runs.</text>
+</svg>

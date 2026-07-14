@@ -1,0 +1,46 @@
+# --- dependencies & build outputs ---
+.build/
+.swiftpm/
+Package.resolved
+build/
+dist/
+out/
+node_modules/
+
+# --- Xcode ---
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+*.xcresult
+*.moved-aside
+*.pbxuser
+!default.pbxuser
+
+# --- model weights & large artifacts (never commit) ---
+models/
+*.gguf
+*.onnx
+*.safetensors
+*.mlmodelc
+*.mlpackage
+
+# --- env & secrets ---
+.env
+.env.*
+!.env.example
+
+# --- compiled objects ---
+*.o
+*.a
+*.so
+*.dylib
+
+# --- caches / editor / OS ---
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+.cache/
+*.log
+tmp/
