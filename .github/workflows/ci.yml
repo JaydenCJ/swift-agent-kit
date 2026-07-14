@@ -1,0 +1,16 @@
+name: CI
+
+on: [push, pull_request]
+
+jobs:
+  test:
+    # macOS runner: the package includes FoundationModelsProvider, guarded by
+    # `#if canImport(FoundationModels)` (an Apple-only framework). Building on
+    # macOS exercises the full package, including that provider, with the
+    # toolchain Xcode ships.
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: swift --version
+      - run: swift build --build-tests
+      - run: swift test
